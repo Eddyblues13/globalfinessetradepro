@@ -25,7 +25,7 @@
             <div class="day fs-2">{{ $deposit->created_at->format('d') }}</div>
         </div>
         <div class="transaction-details">
-            <div class="amount text-silverish">FUND {{ config('currencies.' . Auth::user()->currency, '$') }}{{
+            <div class="amount text-silverish">FUND {{ Auth::user()->currency }}{{
                 number_format($deposit->amount, 2) }}</div>
             <div class="deposit-description">{{ strtoupper($deposit->account_type) }} BALANCE TOTAL</div>
         </div>

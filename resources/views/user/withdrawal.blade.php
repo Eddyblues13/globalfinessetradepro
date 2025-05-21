@@ -31,7 +31,7 @@
             <div class="day fs-2">{{ $withdrawal->created_at->format('d') }}</div>
         </div>
         <div class="transaction-details">
-            <div class="amount text-silverish">FUND {{ config('currencies.' . Auth::user()->currency, '$') }}{{
+            <div class="amount text-silverish">FUND {{ Auth::user()->currency }}{{
                 number_format($withdrawal->amount, 2) }}</div>
             <div class="deposit-description">{{ strtoupper($withdrawal->account_type) }} BALANCE TOTAL</div>
         </div>

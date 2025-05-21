@@ -104,7 +104,7 @@ return [
     'QAR' => 'ر.ق',
     'RON' => 'lei',
     'RUB' => '₽',
-    'RWF' => 'FRw',
+    'RWF' => 'FRw', 
     'WST' => 'T',
     'STN' => 'Db',
     'SAR' => 'ر.س',

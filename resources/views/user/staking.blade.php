@@ -7,8 +7,8 @@
         <!-- Left Section -->
         <div class="col-lg-4">
             <div class="balance-section py-4">
-                <div class="balance-amount text-white fs-5">{{ config('currencies.' .
-                    Auth::user()->currency, '$') }}{{ number_format($stakingBalance, 1) }}</div>
+                <div class="balance-amount text-white fs-5">{{ Auth::user()->currency }}{{
+                    number_format($stakingBalance, 1) }}</div>
                 <div class="balance-label">STAKING BALANCE</div>
             </div>
             <div class="action-buttons">

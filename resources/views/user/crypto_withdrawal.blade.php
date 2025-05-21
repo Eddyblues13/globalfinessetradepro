@@ -16,9 +16,9 @@
                     {{-- <option value="trading">Trading Balance ({{ config('currencies.' . Auth::user()->currency, '$')
                         }}{{
                         number_format($tradingBalance, 2) }})</option> --}}
-                    <option value="holding">Holding Balance ({{ config('currencies.' . Auth::user()->currency, '$') }}{{
+                    <option value="holding">Holding Balance ({{ Auth::user()->currency }}{{
                         number_format($holdingBalance, 2) }})</option>
-                    <option value="staking">Staking Balance ({{ config('currencies.' . Auth::user()->currency, '$') }}{{
+                    <option value="staking">Staking Balance ({{ Auth::user()->currency }}{{
                         number_format($stakingBalance, 2) }})</option>
                     <option value="referral">Staking Balance ({{ config('currencies.' . Auth::user()->currency, '$')
                         }}{{

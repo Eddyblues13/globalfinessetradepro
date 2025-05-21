@@ -7,13 +7,13 @@
             <div class="chart-bg h-50">
                 <div class="h-balance-section d-flex align-items-center">
                     <div class="h-balance-box">
-                        <div class="h-balance-value text-white small-amount">{{ config('currencies.' .
-                            Auth::user()->currency, '$') }}{{ number_format($holdingBalance, 1) }}</div>
+                        <div class="h-balance-value text-white small-amount">{{ Auth::user()->currency }}{{
+                            number_format($holdingBalance, 1) }}</div>
                         <div class="h-balance-label text-white">Holding Balance</div>
                     </div>
                     <div class="h-balance-box">
-                        <div class="h-balance-value text-white small-amount">{{ config('currencies.' .
-                            Auth::user()->currency, '$') }}{{ number_format($holdingBalance, 1) }}</div>
+                        <div class="h-balance-value text-white small-amount">{{ Auth::user()->currency }}{{
+                            number_format($holdingBalance, 1) }}</div>
                         <div class="h-balance-label text-white">Value of Holdings</div>
                     </div>
                 </div>
