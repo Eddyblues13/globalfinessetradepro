@@ -29,20 +29,20 @@
                 <div class="dashboard-action-grid">
                     <div class="dashboard-action-button fund-account">
                         <span>
-                            Referral Bonus
-                        </span>
-
-                        {{ config('currencies.' .
-                        Auth::user()->currency, '$') }}{{ number_format($referralBalance, 1) }}
-                    </div>
-
-                    <div class="dashboard-action-button copy-experts">
-                        <span>
-                            Total Profit
+                           Total Profit 
                         </span>
 
                         {{ config('currencies.' .
                         Auth::user()->currency, '$') }}{{ number_format($profit, 1) }}
+                    </div>
+
+                    <div class="dashboard-action-button copy-experts">
+                        <span>
+                             Referral Bonus
+                        </span>
+
+                        {{ config('currencies.' .
+                        Auth::user()->currency, '$') }}{{ number_format($referralBalance, 1) }}
                     </div>
 
                     <div class="dashboard-action-button asset-market">

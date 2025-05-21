@@ -5,7 +5,7 @@
 
 <!-- Main Content -->
 <div class="depost-form-main">
-    <h6 class="heading text-secondary fs-6">CRYPTO WITHDRAWAL</h6>
+    <h6 class="heading text-secondary fs-6">WITHDRAWAL</h6>
     <div class="withdraw-card">
         <form id="withdrawalForm">
             @csrf
@@ -33,11 +33,15 @@
             </div>
 
             <div class="input-group">
-                <div class="input-label">Crypto Currency</div>
+                <div class="input-label">Payment Method</div>
                 <select class="select-account" name="crypto_currency">
                     <option value="btc">Bitcoin BTC</option>
                     <option value="usdt">Tether USDT</option>
                     <option value="eth">Ethereum ETH</option>
+                    <option value="bank">Bank Transfer</option>
+                    <option value="bch">Bitcoin Cash BCH</option>
+                    <option value="bnb">BNB Coins</option>
+
                 </select>
             </div>
 
@@ -47,7 +51,7 @@
             </div>
 
             <div class="input-group">
-                <div class="input-label">Wallet Address</div>
+                <div class="input-label">Withdrawal Details</div>
                 <input type="text" class="amount-input" name="wallet_address">
             </div>
             <button type="submit" class="withdrawal-btn">Submit</button>
