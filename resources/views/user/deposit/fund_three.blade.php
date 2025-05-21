@@ -21,6 +21,8 @@
                 <option value="DOGE">Dogecoin (DOGE)</option>
                 <option value="LTC">Litecoin (LTC)</option>
                 <option value="ADA">Cardano (ADA)</option>
+                <option value="BCH">Bitcoin Cash (BCH)</option>
+
             </select>
         </div>
 
