@@ -9,13 +9,13 @@
                 <div class="dashboard-balance-card">
                     <div class="d-flex justify-content-between">
                         <div>
-                            <div class="dashboard-balance-amount small-amount">{{ config('currencies.' .
-                                Auth::user()->currency, '$') }}{{ number_format($depositBalance, 1) }}</div>
+                            <div class="dashboard-balance-amount small-amount">{{ Auth::user()->currency }}{{
+                                number_format($depositBalance, 1) }}</div>
                             <div class="dashboard-balance-label text-white">DEPOSIT BALANCE</div>
                         </div>
                         <div>
-                            <div class="dashboard-balance-amount small-amount">{{ config('currencies.' .
-                                Auth::user()->currency, '$') }}{{ number_format($profit, 1) }}</div>
+                            <div class="dashboard-balance-amount small-amount">{{ Auth::user()->currency }}{{
+                                number_format($profit, 1) }}</div>
                             <div class="dashboard-balance-label text-white">PROFIT BALANCE</div>
                         </div>
                     </div>
