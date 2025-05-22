@@ -19,7 +19,7 @@
 
                 <form id="logout-form" action="{{ route('user.logout') }}" method="POST" class="d-none">
                     @csrf
-                </form>
+                </form> 
             </div>
         </div>
         <!-- Left Column -->
