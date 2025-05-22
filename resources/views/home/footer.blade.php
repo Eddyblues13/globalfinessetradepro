@@ -1,5 +1,3 @@
-<script src="alert/js/jquery-2.2.3.js"></script>
-
 <script type="text/javascript" src="alert/js/jquery.fake-notification.min.js"></script>
 <script>
     $(document).ready(function() {
