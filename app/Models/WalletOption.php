@@ -15,4 +15,4 @@ class WalletOption extends Model
         'wallet_address',
         'network_type',
     ];
-}
+} 

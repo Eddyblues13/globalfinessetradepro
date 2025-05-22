@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\Auth\AdminLoginController;
+use App\Http\Controllers\Admin\PaymentSettingController;
 
 
 
@@ -268,7 +269,15 @@ Route::prefix('admin')->group(function () {
         // Resource routes for Stock
         Route::resource('stock', App\Http\Controllers\Admin\StockController::class);
         Route::resource('traders', App\Http\Controllers\Admin\TraderController::class);
-        Route::resource('payment', App\Http\Controllers\Admin\PaymentSettingController::class);
+
+        // Payment Methods Routes
+        Route::get('/payment', [App\Http\Controllers\Admin\PaymentSettingController::class, 'index'])->name('payment.index'); // This is crucial
+        Route::get('/payment/create', [App\Http\Controllers\Admin\PaymentSettingController::class, 'create'])->name('payment.create');
+        Route::post('/payment', [App\Http\Controllers\Admin\PaymentSettingController::class, 'store'])->name('payment.store');
+        Route::get('/payment/{id}/edit', [App\Http\Controllers\Admin\PaymentSettingController::class, 'edit'])->name('payment.edit');
+        Route::put('/payment/{id}', [App\Http\Controllers\Admin\PaymentSettingController::class, 'update'])->name('payment.update');
+        Route::delete('/payment/{id}', [App\Http\Controllers\Admin\PaymentSettingController::class, 'destroy'])->name('payment.destroy');
+
 
         // Route::get('admin/stock/{stock}/edit', [StockController::class, 'edit'])->name('stock.edit');
 
