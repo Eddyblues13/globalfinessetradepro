@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Models\User\Profit;
 use App\Models\User\Deposit;
 use Illuminate\Http\Request;
+use App\Models\User\Withdrawal;
 use App\Models\User\MiningBalance;
 use App\Models\User\HoldingBalance;
 use App\Models\User\StakingBalance;
@@ -30,7 +31,13 @@ class UserController extends Controller
             ->where('status', 'approved') // Only include approved deposits
             ->sum('amount') ?? 0;
         $data['profit'] = Profit::where('user_id', $user->id)->sum('amount') ?? 0;
-  
+
+        $data['pendingWithdrawals'] = Withdrawal::where('user_id', $user->id)
+            ->where('status', 'pending')
+            ->sum('amount');
+
+
+
         $data['totalBalance'] =
             $data['holdingBalance'] +
             $data['stakingBalance'] +

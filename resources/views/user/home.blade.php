@@ -45,10 +45,10 @@
 
                     <div class="dashboard-action-button asset-market">
                         <span>
-                            Trading Balance
+                            Pending Withdrawal
                         </span>
 
-                        {{ Auth::user()->currency }}{{ number_format($tradingBalance, 1) }}
+                        {{ Auth::user()->currency }}{{ number_format($pendingWithdrawals, 1) }}
                     </div>
 
                     <a href="" class="dashboard-action-button trading-room">
