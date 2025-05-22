@@ -10,13 +10,13 @@
                     <div class="d-flex justify-content-between">
                         <div>
                             <div class="dashboard-balance-amount small-amount">{{ Auth::user()->currency }}{{
-                                number_format($depositBalance, 1) }}</div>
-                            <div class="dashboard-balance-label text-white">DEPOSIT BALANCE</div>
+                                number_format($profit, 1) }}</div>
+                            <div class="dashboard-balance-label text-white">TOTAL PROFIT</div>
                         </div>
                         <div>
                             <div class="dashboard-balance-amount small-amount">{{ Auth::user()->currency }}{{
-                                number_format($profit, 1) }}</div>
-                            <div class="dashboard-balance-label text-white">PROFIT BALANCE</div>
+                                number_format($depositBalance, 1) }}</div>
+                            <div class="dashboard-balance-label text-white">TOTAL DEPOSIT</div>
                         </div>
                     </div>
                     <div class="signal-strength">
@@ -37,29 +37,25 @@
 
                     <div class="dashboard-action-button copy-experts">
                         <span>
-                            Referral Bonus
-                        </span>
-
-                        {{ Auth::user()->currency }}{{ number_format($referralBalance, 1) }}
-                    </div>
-
-                    <div class="dashboard-action-button asset-market">
-                        <span>
                             Total Deposit
                         </span>
 
                         {{ Auth::user()->currency }}{{ number_format($depositBalance, 1) }}
                     </div>
 
+                    <div class="dashboard-action-button asset-market">
+                        <span>
+                            Trading Balance
+                        </span>
+
+                        {{ Auth::user()->currency }}{{ number_format($tradingBalance, 1) }}
+                    </div>
+
                     <a href="" class="dashboard-action-button trading-room">
                         <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                                fill="#fff">
-                                <path
-                                    d="M640-160v-280h160v280H640Zm-240 0v-640h160v640H400Zm-240 0v-440h160v440H160Z" />
-                            </svg>
+                            Referral Bonus
                         </span>
-                        TRADING ROOM
+                        {{ Auth::user()->currency }}{{ number_format($referralBalance, 1) }}
                     </a>
                 </div>
 

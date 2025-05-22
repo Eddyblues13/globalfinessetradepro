@@ -1,3 +1,45 @@
+<script src="alert/js/jquery-2.2.3.js"></script>
+
+<script type="text/javascript" src="alert/js/jquery.fake-notification.min.js"></script>
+<script>
+    $(document).ready(function() {
+  $('#notification-1').Notification({
+    // Notification varibles
+    Varible1: ["Dirk", "Johnny", "Watkin ", "Alejandro",  "Vina",  "Tony",   "Ahmed","Jackson",  "Noah", "Aiden",  "Darren", "Isabella", "Aria", "John", "Greyson", "Peter", "Mohammed", "William",
+    "Lucas", "Amelia", "Mason", "Mathew", "Richard", "Chris", "Mia", "Oliver", "Andres"],
+    Varible2: ["USA","UAE","ITALY", "FLORIDA",  "MEXICO",  "INDIA",  "CHINA",  "CAMBODIA",  "UNITED KINGDOM",  "GERMANY", "AUSTRALIA",  "BANGLADESH", "SWEDEN", "PAKISTAN", "MALDIVES", "SEYCHELLES", 
+    "BOLIVIA",
+     "SOUTH AFRICA", "ZAMBIA", "ZIMBABWE", "LEBANESE", "SAUDI ARABIA", "CHILE", "PEUTO RICO", "PHILIPPINES"],
+    
+    Amount: [9000, 2500,5000,6669,4440,7989,7052],          
+    Content: '[Varible1] from [Varible2] has just Withdrew <b>$[Amount]</b>',
+    // Timer
+    Show: ['stable', 5, 10],
+    Close: 5,
+    Time: [0, 23],
+    // Notification style 
+    LocationTop: [true, '50%'],
+    LocationBottom:[false, '10%'],
+    LocationRight: [false, '10%'],            
+    LocationLeft:[true, '10px'],
+    Background: 'rgba(0,0,0,0.0)',
+    BorderRadius: 5,
+    BorderWidth: 1,
+    BorderColor: 'rgba(0,0,0,0.0)',
+    TextColor: 'white',
+    IconColor: '#ffffff',
+    // Notification Animated   
+    AnimationEffectOpen: 'slideInUp',
+    AnimationEffectClose: 'slideOutDown',
+    // Number of notifications
+    Number: 40,
+    // Notification link
+    Link: [false, 'index.html', '_blank']
+    
+  });     
+});
+</script>
+
 <footer class="footer" id="footer">
     <div style="background-color:#14181a; color:#c6c6c6" class="top-bar visible-lg">
         <div class="container">
@@ -5,15 +47,17 @@
                 <div class="top-bar-socials page_speed_2044161438">
                     <div class="social-holder">
                         <span>Connect with us:</span>
-                        <a title="Facebook" class="social" target="_blank" href="/cdn-cgi/l/email-protection#3e4d4b4e4e514c4a7e5952515c5f525857505b4d4d5b4a4c5f5a5b105d5153">
+                        <a title="Facebook" class="social" target="_blank"
+                            href="/cdn-cgi/l/email-protection#3e4d4b4e4e514c4a7e5952515c5f525857505b4d4d5b4a4c5f5a5b105d5153">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <span class="show-for-sr"> </span>
                         </a>
                     </div>
                 </div>
-                
+
                 <div style="background-color:#14181a; color:#c6c6c6" class="online-chat text-center">
-                    <a title="Live Chat" onclick="openLiveChat(event)" href="#" class="chat-window-open-bm chat-window-open">
+                    <a title="Live Chat" onclick="openLiveChat(event)" href="#"
+                        class="chat-window-open-bm chat-window-open">
                         <i class="fa fa-2x fa-commenting" aria-hidden="true"></i>
                         <span>Live Chat</span>
                     </a>
@@ -35,7 +79,8 @@
                     </div>
                     <div class="social-holder">
                         <span>Connect with us:</span>
-                        <a title="Facebook" class="social" target="_blank" href="/cdn-cgi/l/email-protection#51222421213e232511363d3e33303d37383f3422223425233035347f323e3c">
+                        <a title="Facebook" class="social" target="_blank"
+                            href="/cdn-cgi/l/email-protection#51222421213e232511363d3e33303d37383f3422223425233035347f323e3c">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <span class="show-for-sr"> </span>
                         </a>
@@ -49,7 +94,9 @@
         <div class="container">
             <div class="text-left mb-3">
                 <a class="d-inline-block" title="main page" href="/">
-                    <img class="img-responsive" src="{{ asset('storage/app/public/photos/XE8e6dOBv3LxXouRNLOzAUlhuiYW0nAb5ufbz2vH.png') }}" alt="Logo" width=172>
+                    <img class="img-responsive"
+                        src="{{ asset('storage/app/public/photos/XE8e6dOBv3LxXouRNLOzAUlhuiYW0nAb5ufbz2vH.png') }}"
+                        alt="Logo" width=172>
                 </a>
             </div>
 
@@ -73,7 +120,8 @@
 
                             <div class="col-md-3">
                                 <ul>
-                                    <li><a title="Platform Overview" href="{{ route('regulation') }}">Legal / Regulation</a></li>
+                                    <li><a title="Platform Overview" href="{{ route('regulation') }}">Legal /
+                                            Regulation</a></li>
                                     <li><a title="Automate" href="{{ route('trade') }}">System</a></li>
                                 </ul>
                             </div>
@@ -93,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="hidden-lg">
                 <div class="row">
                     <div class="col-sm-12">
@@ -102,7 +150,7 @@
                                 <div class="d-flex space-between mb-3"></div>
                             </div>
                         </div>
-                        
+
                         <div class="text-center">
                             <p class="m-0 available">
                                 <i class="fa fa-desktop"></i>
@@ -119,17 +167,20 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="mb-2">
-                            <span class="fw-600">Please Note:</span>&nbsp; You need to get verified by submitting your documents before being able to<footer class="footer" id="footer">
-        <div style="background-color:#14181a; color:#c6c6c6" class="top-bar visible-lg">
-            <div class="container">
-                <div class="wrap">
-                    <div class="top-bar-socials page_speed_2044161438">
-                        <div class="social-holder"><span>Connect with us:</span>
+                            <span class="fw-600">Please Note:</span>&nbsp; You need to get verified by submitting your
+                            documents before being able to
+                        <footer class="footer" id="footer">
+                            <div style="background-color:#14181a; color:#c6c6c6" class="top-bar visible-lg">
+                                <div class="container">
+                                    <div class="wrap">
+                                        <div class="top-bar-socials page_speed_2044161438">
+                                            <div class="social-holder"><span>Connect with us:</span>
 
 
-                            <a title="Facebook" class="social" target="_blank"
-                                href="/cdn-cgi/l/email-protection#6f1c1a1f1f001d1b2f0803000d0e030906010a1c1c0a1b1d0e0b0a410c0002"><i
-                                    class="fa fa-envelope" aria-hidden="true"></i><span class="show-for-sr"> </span></a>
+                                                <a title="Facebook" class="social" target="_blank"
+                                                    href="/cdn-cgi/l/email-protection#6f1c1a1f1f001d1b2f0803000d0e030906010a1c1c0a1b1d0e0b0a410c0002"><i
+                                                        class="fa fa-envelope" aria-hidden="true"></i><span
+                                                        class="show-for-sr"> </span></a>
 
 
 
@@ -140,8 +191,8 @@
 
 
 
-                        </div>
-                    </div>
+                                            </div>
+                                        </div>
 
 
 
@@ -149,152 +200,14 @@
 
 
 
-                    <div style="background-color:#14181a; color:#c6c6c6" class="online-chat text-center"><a
-                            title="Live Chat" onclick="openLiveChat(event)" href="#"
-                            class="chat-window-open-bm chat-window-open"><i class="fa fa-2x fa-commenting"
-                                aria-hidden="true"></i><span>Live Chat</span></a></div>
-                    <div class="top-bar-badges"></div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <div style="background-color:#14181a; color:#c6c6c6" class="top-bar-mobile hidden-lg">
-            <div class="container">
-                <div class="wrap">
-                    <div class="top-bar-socials">
-                        <div class="online-chat"><a title="Live Chat" onclick="openLiveChat(event)" href="#"
-                                class="chat-window-open"><i class="fa fa-2x fa-commenting"
-                                    aria-hidden="true"></i><span>Live Chat</span></a></div>
-                        <div class="social-holder"><span>Connect with us:</span>
-
-
-
-
-                            <a title="Facebook" class="social" target="_blank"
-                                href="/cdn-cgi/l/email-protection#4d3e383d3d223f390d2a21222f2c212b2423283e3e28393f2c2928632e2220"><i
-                                    class="fa fa-envelope" aria-hidden="true"></i><span class="show-for-sr"> </span></a>
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-        <!-- FOOTERMENU -->
-
-
-        <div style="background-color:#000; color:#c6c6c6" class="pt-4 pb-4">
-            <div class="container">
-                <div class="text-left mb-3"><a class="d-inline-block" title="main page" href="/"><img
-                            class="img-responsive"
-                            src="https://globalfinessetrade.com/storage/app/public/photos/XE8e6dOBv3LxXouRNLOzAUlhuiYW0nAb5ufbz2vH.png"
-                            alt="Logo" width=172></a></div>
-
-
-
-
-
-                <div class="" id="footerItems">
-                    <div class="row">
-                        <div class="col-lg-9 menu">
-                            <div class="row">
-                                <div class="col-md-3">
-
-                                    <ul>
-                                        <li><a title="all markets" href="about">Company</a></li>
-
-
-
-                                        <li><a title="Shares" href="contact">Contact</a></li>
-
-
-
-
-
-                                    </ul>
-                                </div>
-
-
-
-
-
-                                <div class="col-md-3">
-                                    <ul>
-                                        <li><a title="Login" href="login">Login</a> </li>
-
-                                        <li><a title="Login" href="register">Register</a></li>
-
-
-
-
-                                    </ul>
-                                </div>
-
-
-
-
-
-
-                                <div class="col-md-3">
-                                    <ul>
-                                        <li><a title="Platform Overview" href="regulation">Legal / Regulation</a></li>
-
-
-
-
-                                        <li><a title="Automate" href="trade">System </a></li>
-
-
-                                    </ul>
-                                </div>
-
-
-
-
-
-                                <div class="col-md-3">
-                                    <ul>
-                                        <li><a href="about">About us</a></li>
-                                        <li><a href="for-traders">Education</a></li>
-
-                                    </ul>
-
-
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="col-lg-3 menu">
-                            <div class="badges">
-                                <div class="d-flex mt-2"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden-lg">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="badges-mobile">
-                                <div class="wraped">
-                                    <div class="d-flex space-between mb-3"></div>
+                                        <div style="background-color:#14181a; color:#c6c6c6"
+                                            class="online-chat text-center"><a title="Live Chat"
+                                                onclick="openLiveChat(event)" href="#"
+                                                class="chat-window-open-bm chat-window-open"><i
+                                                    class="fa fa-2x fa-commenting" aria-hidden="true"></i><span>Live
+                                                    Chat</span></a></div>
+                                        <div class="top-bar-badges"></div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -302,13 +215,30 @@
 
 
 
-                            <div class="text-center">
-                                <p class="m-0 available"> <i class="fa fa-desktop"></i><i class="fa fa-apple"></i><i
-                                        class="fa fa-android"></i><i class="fa fa-windows"></i></p>
+                            <div style="background-color:#14181a; color:#c6c6c6" class="top-bar-mobile hidden-lg">
+                                <div class="container">
+                                    <div class="wrap">
+                                        <div class="top-bar-socials">
+                                            <div class="online-chat"><a title="Live Chat" onclick="openLiveChat(event)"
+                                                    href="#" class="chat-window-open"><i class="fa fa-2x fa-commenting"
+                                                        aria-hidden="true"></i><span>Live Chat</span></a></div>
+                                            <div class="social-holder"><span>Connect with us:</span>
+
+
+
+
+                                                <a title="Facebook" class="social" target="_blank"
+                                                    href="/cdn-cgi/l/email-protection#4d3e383d3d223f390d2a21222f2c212b2423283e3e28393f2c2928632e2220"><i
+                                                        class="fa fa-envelope" aria-hidden="true"></i><span
+                                                        class="show-for-sr"> </span></a>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
 
 
@@ -319,86 +249,220 @@
 
 
 
-                <div style="background-color:#000; color:#c6c6c6" class="mt-3">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="mb-2"><span class="fw-600">Please Note:</span>&nbsp; You need to get verified by
-                                submitting your documents before being able to trade. Please read our full: <a
-                                    title="terms and conditions" class="pdf-links" href="terms" target="_blank">Terms
-                                    &amp; Conditions</a>&nbsp;
-                                <a title="privacy policy" class="pdf-links" href="privacy" target="_blank">Privacy
-                                    Policy</a>&nbsp; <a title="regulation" class="pdf-links" href="regulation"
-                                    target="_blank">Legal Documents</a>.
-                            </p>
 
-                            RISK WARNING: The Financial Products offered by the company include Contracts for Difference
-                            ('CFDs') and other complex financial products. Trading CFDs carries a high level of risk
-                            since leverage can work both to your advantage and disadvantage. As a
-                            result, CFDs may not be suitable for all investors because it is possible to lose all of
-                            your invested capital. You should never invest money that you cannot afford to lose. Before
-                            trading in the complex financial products
-                            offered, please ensure to understand the risks involved.
+                            <!-- FOOTERMENU -->
+
+
+                            <div style="background-color:#000; color:#c6c6c6" class="pt-4 pb-4">
+                                <div class="container">
+                                    <div class="text-left mb-3"><a class="d-inline-block" title="main page"
+                                            href="/"><img class="img-responsive"
+                                                src="https://globalfinessetrade.com/storage/app/public/photos/XE8e6dOBv3LxXouRNLOzAUlhuiYW0nAb5ufbz2vH.png"
+                                                alt="Logo" width=172></a></div>
 
 
 
-                            <hr>
-                            <p class="mb-1"></p>
-                            <p class="mb-0">©
-                                <script data-cfasync="false"
-                                    src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                                <script type="text/javascript">
-                                    var year = new Date();
+
+
+                                    <div class="" id="footerItems">
+                                        <div class="row">
+                                            <div class="col-lg-9 menu">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+
+                                                        <ul>
+                                                            <li><a title="all markets" href="about">Company</a></li>
+
+
+
+                                                            <li><a title="Shares" href="contact">Contact</a></li>
+
+
+
+
+
+                                                        </ul>
+                                                    </div>
+
+
+
+
+
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li><a title="Login" href="login">Login</a> </li>
+
+                                                            <li><a title="Login" href="register">Register</a></li>
+
+
+
+
+                                                        </ul>
+                                                    </div>
+
+
+
+
+
+
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li><a title="Platform Overview" href="regulation">Legal /
+                                                                    Regulation</a></li>
+
+
+
+
+                                                            <li><a title="Automate" href="trade">System </a></li>
+
+
+                                                        </ul>
+                                                    </div>
+
+
+
+
+
+                                                    <div class="col-md-3">
+                                                        <ul>
+                                                            <li><a href="about">About us</a></li>
+                                                            <li><a href="for-traders">Education</a></li>
+
+                                                        </ul>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 menu">
+                                                <div class="badges">
+                                                    <div class="d-flex mt-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hidden-lg">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="badges-mobile">
+                                                    <div class="wraped">
+                                                        <div class="d-flex space-between mb-3"></div>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+                                                <div class="text-center">
+                                                    <p class="m-0 available"> <i class="fa fa-desktop"></i><i
+                                                            class="fa fa-apple"></i><i class="fa fa-android"></i><i
+                                                            class="fa fa-windows"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+                                    <div style="background-color:#000; color:#c6c6c6" class="mt-3">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="mb-2"><span class="fw-600">Please Note:</span>&nbsp; You need
+                                                    to get verified by
+                                                    submitting your documents before being able to trade. Please read
+                                                    our full: <a title="terms and conditions" class="pdf-links"
+                                                        href="terms" target="_blank">Terms
+                                                        &amp; Conditions</a>&nbsp;
+                                                    <a title="privacy policy" class="pdf-links" href="privacy"
+                                                        target="_blank">Privacy
+                                                        Policy</a>&nbsp; <a title="regulation" class="pdf-links"
+                                                        href="regulation" target="_blank">Legal Documents</a>.
+                                                </p>
+
+                                                RISK WARNING: The Financial Products offered by the company include
+                                                Contracts for Difference
+                                                ('CFDs') and other complex financial products. Trading CFDs carries a
+                                                high level of risk
+                                                since leverage can work both to your advantage and disadvantage. As a
+                                                result, CFDs may not be suitable for all investors because it is
+                                                possible to lose all of
+                                                your invested capital. You should never invest money that you cannot
+                                                afford to lose. Before
+                                                trading in the complex financial products
+                                                offered, please ensure to understand the risks involved.
+
+
+
+                                                <hr>
+                                                <p class="mb-1"></p>
+                                                <p class="mb-0">©
+                                                    <script data-cfasync="false"
+                                                        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+                                                    </script>
+                                                    <script type="text/javascript">
+                                                        var year = new Date();
                                             document.write(year.getFullYear());
-                                </script>
-                                Global Finesse Trade. All Rights Reserved.
-                            </p>
+                                                    </script>
+                                                    Global Finesse Trade. All Rights Reserved.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+
+
+
+
+
+                        <div class="mgm" style="display: none;">
+                            <div class="txt" style="color:#fff;">Someone from <b></b> just earned <a
+                                    href="javascript:void(0);" onclick="javascript:void(0);"></a></div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
+                        <style>
+                            .txt {
+                                color: #000 !important;
+                            }
 
+                            .mgm {
+                                border-radius: 7px;
+                                position: fixed;
+                                z-index: 90;
+                                bottom: 20px;
+                                right: 50px;
+                                background: #fff;
+                                color: #000;
+                                padding: 20px 27px;
+                                box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, .3);
+                            }
 
+                            .mgm a {
+                                font-weight: 700;
+                                display: block;
+                                color: #ff6600;
+                            }
 
-
-    <div class="mgm" style="display: none;">
-        <div class="txt" style="color:#fff;">Someone from <b></b> just earned <a href="javascript:void(0);"
-                onclick="javascript:void(0);"></a></div>
-    </div>
-
-    <style>
-        .txt {
-            color: #000 !important;
-        }
-
-        .mgm {
-            border-radius: 7px;
-            position: fixed;
-            z-index: 90;
-            bottom: 20px;
-            right: 50px;
-            background: #fff;
-            color: #000;
-            padding: 20px 27px;
-            box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, .3);
-        }
-
-        .mgm a {
-            font-weight: 700;
-            display: block;
-            color: #ff6600;
-        }
-
-        .mgm a,
-        .mgm a:active {
-            transition: all .2s ease;
-            color: #ff6600;
-        }
-    </style>
-    <script type="text/javascript">
-        var listCountries = ['Argentina', 'USA', 'Germany', 'France', 'Italy', 'South Korea', 'Australia', 'Norway', 'Canada', 'Argentina', 'Saudi Arabia', 'Mexico', 'Spain', 'Austria', 'Venezuela', 'South Africa', 'Sweden', 'South Korea', 'China', 'Italy', 'Germany', 'United Kingdom', 'Bahrain', 'Greece', 'Cuba', 'Bulgaria', 'Portugal', 'Austria', 'Cyprus', 'Panama', 'Asia', 'Norway', 'Netherlands', 'Switzerland', 'Belgium', 'Israel', 'Cyprus', 'Spain', 'Norway'];
+                            .mgm a,
+                            .mgm a:active {
+                                transition: all .2s ease;
+                                color: #ff6600;
+                            }
+                        </style>
+                        <script type="text/javascript">
+                            var listCountries = ['Argentina', 'USA', 'Germany', 'France', 'Italy', 'South Korea', 'Australia', 'Norway', 'Canada', 'Argentina', 'Saudi Arabia', 'Mexico', 'Spain', 'Austria', 'Venezuela', 'South Africa', 'Sweden', 'South Korea', 'China', 'Italy', 'Germany', 'United Kingdom', 'Bahrain', 'Greece', 'Cuba', 'Bulgaria', 'Portugal', 'Austria', 'Cyprus', 'Panama', 'Asia', 'Norway', 'Netherlands', 'Switzerland', 'Belgium', 'Israel', 'Cyprus', 'Spain', 'Norway'];
         var listPlans = ['$2000', '$1000', '$50000', '$15000', '$10000', '$100000', '$20000', '$1500', '$30000', '$40000', '$1200', '$60000', '$3400', '$7000', '$25000', '$25000', '$35000', '$5000', '$7000', '$45000', '$3500', '$5000', '$12500', '$9500'];
         var listActions = ['earned', 'traded', 'withdrew'];
         interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
@@ -419,29 +483,30 @@
             }, 1000);
             run = setInterval(request, interval);
         }
-    </script>
+                        </script>
 
 
 
 
 
-    <style>
-        .last-widget {
-            position: sticky;
-            z-index: 10;
-            bottom: 0;
-        }
-    </style>
+                        <style>
+                            .last-widget {
+                                position: sticky;
+                                z-index: 10;
+                                bottom: 0;
+                            }
+                        </style>
 
 
-    <div class="last-widget">
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
+                        <div class="last-widget">
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
 
-            <script type="text/javascript"
-                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-                {
+                                <script type="text/javascript"
+                                    src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+                                    async>
+                                    {
                     "symbols": [{
                             "proName": "FX_IDC:EURUSD",
                             "title": "EUR/USD"
@@ -460,15 +525,15 @@
                     "displayMode": "adaptive",
                     "locale": "en"
                 }
-            </script>
-        </div>
+                                </script>
+                            </div>
 
 
 
-        <script type="text/javascript">
-            (function() {
+                            <script type="text/javascript">
+                                (function() {
                 var options = {
-                    whatsapp: "+1 (870) 440-5992", // WhatsApp number
+                    whatsapp: "+1 (810) 323-5143", // WhatsApp number
                     call_to_action: "Message us", // Call to action
                     button_color: "#FF6550", // Color of button
                     position: "left", // Position may be 'right' or 'left'
@@ -486,18 +551,18 @@
                 var x = document.getElementsByTagName('script')[0];
                 x.parentNode.insertBefore(s, x);
             })();
-        </script>
+                            </script>
 
 
-        <!--End of Tawk.to Script-->
-
-
-
+                            <!--End of Tawk.to Script-->
 
 
 
-        <script type=text/javascript>
-            $(function() {
+
+
+
+                            <script type=text/javascript>
+                                $(function() {
                 function openLiveChat(e) {
                     e.preventDefault();
                     if (typeof Blinger !== 'undefined' && !Blinger.launcherWidget.isOpen) {
@@ -550,10 +615,10 @@
                     });
                 });
             })
-        </script>
-        <script src=temp/custom/id-ct.fondex.com/build/js/sso.min62ea.html defer></script>
-        <script type=text/javascript data-cookie="analytics">
-            (function(c, a) {
+                            </script>
+                            <script src=temp/custom/id-ct.fondex.com/build/js/sso.min62ea.html defer></script>
+                            <script type=text/javascript data-cookie="analytics">
+                                (function(c, a) {
                 if (!a.__SV) {
                     var b = window;
                     try {
@@ -613,9 +678,9 @@
                 }
             })(document, window.mixpanel || []);
             mixpanel.init("9ef90ef3fe4d6c8d4541239aae8c4eb2");
-        </script>
-        <script type=text/javascript data-cookie="functional">
-            (function(b, r, a, n, c, h, _, s, d, k) {
+                            </script>
+                            <script type=text/javascript data-cookie="functional">
+                                (function(b, r, a, n, c, h, _, s, d, k) {
                 if (!b[n] || !b[n]._q) {
                     for (; s < _.length;) c(h, _[s++]);
                     d = r.createElement(a);
@@ -638,18 +703,18 @@
                     console.log(err);
                 }
             });
-        </script>
+                            </script>
 
 
 
 
-        <script>
-            setTimeout(function() {
+                            <script>
+                                setTimeout(function() {
                 $('.loader_bg').fadeToggle();
             }, 1500);
-        </script>
-        <script>
-            (function() {
+                            </script>
+                            <script>
+                                (function() {
                 function c() {
                     var b = a.contentDocument || a.contentWindow.document;
                     if (b) {
@@ -679,7 +744,7 @@
                     }
                 }
             })();
-        </script>
-</body>
+                            </script>
+                            </body>
 
-</html>
+                            </html>

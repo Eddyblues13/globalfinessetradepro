@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{{ asset('temp/custom/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="alert/css/fake-notification-min.css">
+    <link rel="stylesheet" href="alert/css/animate.min.css">
 
     <meta charset="utf-8">
     <title>Global Finesse Trade | @yield('title')</title>
@@ -573,3 +575,34 @@
             </div>
         </nav>
     </header>
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+_smartsupp.key = '7c5fea0a78aff6b343fa2def55095647023516d6';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+    </script>
+    <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
+    <div id="notification-1" class="notification" style="background-color: #d0ebff;">
+        <div class="notification-block">
+            <div class="notification-img">
+                <!-- Your image or icon -->
+                <i class="fa fa-btc" aria-hidden="true"></i>
+                <!-- / Your image or icon -->
+            </div>
+            <div class="notification-text-block">
+                <div class="notification-title">
+                    <!-- Notification Title -->
+                    Withdrawal
+                    <!-- / Notification Title -->
+                </div>
+                <div class="notification-text"></div>
+            </div>
+        </div>
+    </div>
