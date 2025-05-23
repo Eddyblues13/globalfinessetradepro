@@ -60,7 +60,7 @@
                                             @else
                                             Bank Transfer
                                             @endif
-                                        </td>
+                                        </td> 
                                         <td>
                                             <span class="badge 
                                                 @if($withdrawal->status == 'approved') badge-success
