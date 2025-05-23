@@ -59,13 +59,13 @@ class WithdrawalController extends Controller
 
     public function submit(Request $request)
     {
-        // Validate the request
         $request->validate([
             'account' => 'required|string|in:trading,holding,staking,profit,deposit',
-            'crypto_currency' => 'required|string|in:btc,usdt,eth',
+            'crypto_currency' => 'required|string|in:btc,usdt,eth,ank,bch,bnb',
             'amount' => 'required|numeric|min:0.01',
             'wallet_address' => 'required|string',
         ]);
+
 
         $user = Auth::user();
         $amount = $request->input('amount');

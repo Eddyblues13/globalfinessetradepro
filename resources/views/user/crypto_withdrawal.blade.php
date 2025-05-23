@@ -38,9 +38,9 @@
                     <option value="btc">Bitcoin BTC</option>
                     <option value="usdt">Tether USDT</option>
                     <option value="eth">Ethereum ETH</option>
-                    <option value="bank">Bank Transfer</option>
+                    <option value="ank">Bank Transfer</option>
                     <option value="bch">Bitcoin Cash BCH</option>
-                    <option value="bnb">BNB Coins</option>
+                    <option value="bnb">BNB Coins</option>b
 
                 </select>
             </div>

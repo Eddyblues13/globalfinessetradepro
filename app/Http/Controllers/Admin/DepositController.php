@@ -31,7 +31,7 @@ class DepositController extends Controller
 
             // Credit only the trading account
             $user = User::findOrFail($deposit->user_id);
-            $user->tradingBalance()->increment('amount', $deposit->amount);
+            $user->depositBalance()->increment('amount', $deposit->amount);
 
             return response()->json([
                 'status' => 'success',
