@@ -174,7 +174,7 @@ window.smartsupp||(function(d) {
     <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
 
 
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         (function() {
                 var options = {
                     whatsapp: "+1 (810) 323-5143", // WhatsApp number
@@ -195,4 +195,4 @@ window.smartsupp||(function(d) {
                 var x = document.getElementsByTagName('script')[0];
                 x.parentNode.insertBefore(s, x);
             })();
-    </script>
+    </script> --}}
